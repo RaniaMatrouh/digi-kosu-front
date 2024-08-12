@@ -1,0 +1,43 @@
+<div class="management-page">
+  <header class="page-header">
+    <div class="header-content">
+   
+      <h1 class="form-title">Gestion des utilisateurs</h1>
+    </div>
+  </header>
+  <div class="management-content">
+    <table class="user-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nom</th>
+          <th>Email</th>
+          <th>Rôle</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td>{{ user.id }}</td>
+          <td>{{ user.name }}</td>
+          <td>{{ user.email }}</td>
+          <td>{{ user.role }}</td>
+          <td>
+            <button
+              (click)="editUser(user.id)"
+              class="action-button edit-button"
+            >
+              Modifier
+            </button>
+            <button
+              (click)="deleteUser(user.id)"
+              class="action-button delete-button"
+            >
+              Supprimer
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

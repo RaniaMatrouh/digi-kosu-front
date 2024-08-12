@@ -1,0 +1,87 @@
+<div class="form-page">
+  <div class="image-container">
+    <img src="assets/kosu.jpg" alt="Illustration" class="illustration" />
+  </div>
+  <div class="form-content">
+    <div class="logo-container">
+      <h1 class="form-title">Formulaire de KOSU</h1>
+    </div>
+    <div class="form-container">
+      <form [formGroup]="kosuForm" (ngSubmit)="onSubmit()" class="kosu-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="horaire">Horaire:</label>
+            <input
+              id="horaire"
+              formControlName="horaire"
+              type="time"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="serieReference">Série Référence:</label>
+            <input id="serieReference" formControlName="serieReference" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="effectifPresent">Effectif Présent:</label>
+            <input
+              id="effectifPresent"
+              type="number"
+              formControlName="effectifPresent"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="tempsNetDeTravail">Temps Net de Travail:</label>
+            <input
+              id="tempsNetDeTravail"
+              type="number"
+              formControlName="tempsNetDeTravail"
+            />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nok">NOK:</label>
+            <input id="nok" type="number" formControlName="nok" />
+          </div>
+
+          <div class="form-group">
+            <label for="coefficient">Coefficient:</label>
+            <input
+              id="coefficient"
+              type="number"
+              step="0.01"
+              formControlName="coefficient"
+            />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="kosuEquivalent">Kosu Équivalent:</label>
+            <input
+              id="kosuEquivalent"
+              type="number"
+              step="0.01"
+              formControlName="kosuEquivalent"
+            />
+          </div>
+        </div>
+
+        <button
+          type="submit"
+          [disabled]="!kosuForm.valid"
+          class="submit-button"
+        >
+          Enregistrer
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+<div class="management-page">
+  <header class="page-header">
+    <div class="header-content">
+      <h1 class="form-title">Gestion des Kosus</h1>
+    </div>
+  </header>
+  <div class="management-content">
+    <table class="kosu-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Horaire</th>
+          <th>Référence Série</th>
+          <th>Effectif Présent</th>
+          <th>Temps Net de Travail</th>
+          <th>NOK</th>
+          <th>Coefficient</th>
+          <th>Kosu Équivalent</th>
+          <th>ID User</th>
+          <th>Actions</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let kosu of kosus">
+          <td>{{ kosu.idKosu }}</td>
+          <td>{{ kosu.horaire }}</td>
+          <td>{{ kosu.serieReference }}</td>
+          <td>{{ kosu.effectifPresent }}</td>
+          <td>{{ kosu.tempsNetDeTravail }}</td>
+          <td>{{ kosu.nok }}</td>
+          <td>{{ kosu.coefficient }}</td>
+          <td>{{ kosu.kosuEquivalent }}</td>
+          <td>{{ kosu.IdUser}}</td>
+
+          <td>
+            <button (click)="editKosu(kosu.idKosu)" class="action-button edit-button">Modifier</button>
+            <button (click)="deleteKosu(kosu.idKosu)" class="action-button delete-button">Supprimer</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

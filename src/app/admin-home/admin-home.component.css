@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+.admin-home-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.admin-header {
+  background: linear-gradient(90deg, #007bb5 0%, #00b4d8 100%);
+  color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Permet de séparer le logo et le texte */
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center; /* Centre le texte Espace Admin */
+  position: relative;
+}
+
+.header-content .logo {
+  position: absolute;
+  left: 0;
+  height: 120px; /* Taille ajustée du logo */
+  width: auto; /* Maintenir le ratio d'aspect du logo */
+}
+
+.header-content h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.admin-content {
+  display: flex;
+  flex: 1;
+  margin-top: 20px;
+}
+
+.admin-sidebar {
+  width: 220px;
+  background-color: #ffffff;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-left: 20px;
+  padding: 10px;
+}
+
+.admin-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.admin-sidebar li {
+  padding: 15px;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.3s;
+}
+
+.admin-sidebar a {
+  text-decoration: none;
+  color: #007bb5;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.admin-sidebar a i {
+  margin-right: 10px;
+}
+
+.admin-sidebar a:hover {
+  background-color: #007bb5;
+  color: white;
+  border-radius: 4px;
+}
+
+.admin-main {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin: 0 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-message {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.welcome-message h2 {
+  font-size: 28px;
+  color: #333;
+}
+
+.welcome-message .brand-name {
+  color: #007bb5;
+  font-weight: 700;
+}
+
+.welcome-image {
+  margin-top: 20px;
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

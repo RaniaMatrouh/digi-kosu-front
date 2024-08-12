@@ -1,0 +1,23 @@
+<div class="incident-summary-container">
+  <h1 class="text-center mb-4">Résumé des Incidents</h1>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Date</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let incident of incidents">
+        <td>{{ incident.id }}</td>
+        <td>{{ incident.type }}</td>
+        <td>{{ incident.description }}</td>
+        <td>{{ incident.date }}</td>
+        <td>{{ incident.status }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

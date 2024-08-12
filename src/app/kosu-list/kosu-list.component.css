@@ -1,0 +1,86 @@
+.container {
+  max-width: 1200px; /* Augmentez la largeur maximale pour les grands écrans */
+  margin: 0 auto;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 12px; /* Bordure plus douce */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Ombre plus subtile */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px; /* Taille de police augmentée pour les titres */
+  font-weight: 700;
+  color: #007bb5;
+  margin-bottom: 20px;
+}
+
+.table {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 8px; /* Bordure arrondie */
+  overflow: hidden;
+}
+
+.table th,
+.table td {
+  text-align: center;
+  padding: 12px;
+  font-size: 14px;
+  color: #555;
+}
+
+.table th {
+  background-color: #f8f9fa;
+  color: #333;
+  font-weight: 600;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+
+.table-bordered {
+  border: 1px solid #ddd;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 14px;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary {
+  background-color: #007bb5;
+}
+
+.btn-primary:hover {
+  background-color: #007bb5;
+}
+
+.btn-primary:active {
+  transform: scale(0.98);
+}
+
+.btn-danger {
+  background-color: #dc3545;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+.btn-danger:active {
+  transform: scale(0.98);
+}
+
+.bi {
+  margin-right: 5px;
+}
